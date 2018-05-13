@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
+    "start:dev": "nodemon --watch views --watch public/css --watch public/js app.js -e js,css,html,ejs",
     "stop": "reload"
   },
   "author": "Alessandro",
