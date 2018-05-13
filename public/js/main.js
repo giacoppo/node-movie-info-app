@@ -3,6 +3,7 @@ $(document).ready(() => {
         let searchText = $('#searchText').val();
         getMovies(searchText);
         e.preventDefault();
+        $('#searchForm input').blur();
     });
 });
 
