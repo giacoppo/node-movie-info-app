@@ -7,6 +7,10 @@ var app = express();
 //var $ = require('bootstrap');
 var reload = require('reload');
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
@@ -23,6 +27,6 @@ app.get('/movie', function(req, res) {
 // Reload code here
 reload(app);
 
-app.listen(3000, function() {
-    console.log('Movies App is Running on PORT 3000');
+app.listen(port, function() {
+    console.log('Movies App is Running on PORT: ' + port);
 });
