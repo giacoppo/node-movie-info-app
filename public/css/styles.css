@@ -1,0 +1,46 @@
+#movies img,
+#movie img {
+    width: 100%;
+    height: auto;
+}
+
+hr.hr-light {
+    border-top: 1px solid rgba(256,256,256,0.3);
+}
+
+/* #movies .col-md-3 .card {
+    height: 390px;
+} */
+
+@media(min-width:576px){
+    #movies img {
+        height: 300px;
+    }
+}
+
+@media(min-width:768px){
+    #movies img {
+        height: 250px;
+    }
+}
+
+@media(min-width:960px){
+    #movies img {
+        height: 240px;
+    }
+}
+
+@media(min-width:1200px){
+    #movies img {
+        height: 320px;
+    }
+}
+
+#movies h6 {
+    /* min-height: 60px; */
+    padding-top: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75ch;
+}
